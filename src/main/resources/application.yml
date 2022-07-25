@@ -1,4 +1,3 @@
-
 spring:
   h2:
     console:
@@ -25,3 +24,7 @@ debug: true
 server:
   port: 8080
 
+
+jjwt:
+  secret: TPE9Y2jxVcOUwuR8qQdY
+  expiration: 28800
