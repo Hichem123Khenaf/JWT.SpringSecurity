@@ -37,7 +37,7 @@ public class JWTTokenProvider {
     }
 
     // get authorities, nous allons récupérer les claims de token pour savoir les roles.
-    public List<SimpleGrantedAuthority> getAuthorities(String token) {
+    public List<GrantedAuthority> getAuthorities(String token) {
         String[] claims = getClaimsForToken(token);
         return Arrays.stream(claims).map(SimpleGrantedAuthority::new).collect(Collectors.toList());
 
